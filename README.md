@@ -31,8 +31,10 @@ This Web-Scrape-Notifier is a lightweight, configuration based web scraper devel
     - RECIPIENT_EMAIL: The destination address for the alert (see the SMS section below for texting).
     - CRON_SCHEDULE: The interval at which the script runs.
 
-4. Start the container by running:
-    `docker compose -f compose.yaml up  -d `
+4. Start the container by running: 
+```bash
+docker compose -f compose.yaml up  -d
+```
 
 
 ## ⚙️ Configuration
@@ -40,11 +42,11 @@ This Web-Scrape-Notifier is a lightweight, configuration based web scraper devel
 ### 📱 Sending Texts via SMS Gateways
 Using the standard SMTP communication protocol this script can easily be configured to send text messages directly to your phone. Most mobile carriers have a SMS-to-Email gateway which can be used to achieve this outcome.
 
-- T-Mobile: phone_number@tmomail.net
+- T-Mobile: phone\_number@tmomail.net
 
-- Verizon: phone_number@vtext.com
+- Verizon: phone\_number@vtext.com
 
-- AT&T: phone_number@txt.att.net
+- AT&T: phone\_number@txt.att.net
 
 
 ### ⏱️ Setting Timers with Cron
