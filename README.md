@@ -33,7 +33,7 @@ This Web-Scrape-Notifier is a lightweight, configuration based web scraper devel
 
 4. Start the container by running: 
 ```bash
-docker compose -f compose.yaml up  -d
+docker compose -f compose.yaml up -d
 ```
 
 ## ⚙️ Configuration
