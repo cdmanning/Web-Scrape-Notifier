@@ -1,9 +1,12 @@
 services:
   scraper:
-    build: .
+    image: cdmanning/web-scrape-notifier:latest
     container_name: Web-Scrape-Notifier
     restart: unless-stopped
     env_file:
       - .env
     volumes:
       - ./config.json:/app/config.json:ro
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
