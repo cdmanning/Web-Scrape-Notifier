@@ -36,7 +36,6 @@ This Web-Scrape-Notifier is a lightweight, configuration based web scraper devel
 docker compose -f compose.yaml up  -d
 ```
 
-
 ## ⚙️ Configuration
 
 ### 📱 Sending Texts via SMS Gateways
@@ -57,6 +56,7 @@ This docker project uses Linux CRON jobs to orchestrate its scheduling. You can 
 
 - `0 8,20 * * *` - Runs twice a day at 8:00 AM and 8:00 PM.
 
+
 ### 🎯 Configuring the JSON Configuration
 To start monitoring a website for changes add a new entry to the `config.json` define your target. The script detects changes by looking at a specific HTML tag and class, checking if your defined target text is missing. 
 ```
@@ -69,6 +69,7 @@ To start monitoring a website for changes add a new entry to the `config.json` d
 }
 ```
 If the exact target_text (e.g., "Sold Out") is not found within the `<div class="inventory-status">` container on the webpage, the script assumes a change has occurred and will trigger an alert.
+
 
 ### 🧪 Updating and Testing
 When making changes to `config.json`, you do not need to restart the container. Simply edit the file on your filesystem, and the updates will automatically be picked up on the next scheduled cron job cycle. 
