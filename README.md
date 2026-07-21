@@ -7,12 +7,10 @@ This Web-Scrape-Notifier is a lightweight, configuration based web scraper devel
 ```
 /Web-Scrape-Notifier
 ├── .env.example        # Environment variable example
-├── .gitignore          # Version control exclusions
 ├── compose.yaml        # Docker container orchestration
 ├── config.json         # User selected URLs and HTML element selectors
 ├── Dockerfile          # Container build instructions
 ├── message.py          # Email/SMS notification script
-├── README.md           # Project documentation
 ├── requirements.txt    # Python library dependencies
 └── scrape.py           # Web-scraping script
 ```
