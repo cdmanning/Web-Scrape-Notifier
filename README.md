@@ -1,4 +1,4 @@
-# 🔎 Web-Scrape-Notifier [![Docker Image Version](https://img.shields.io/docker/v/cdmanning/web-scrape-notifier)](https://hub.docker.com/r/cdmanning/web-scrape-notifier) [![Docker Pulls](https://img.shields.io/docker/pulls/cdmanning/web-scrape-notifier)](https://hub.docker.com/r/cdmanning/web-scrape-notifier)
+# ![](documentation/icon-48.png)  Web-Scrape-Notifier [![Docker Image Version](https://img.shields.io/docker/v/cdmanning/web-scrape-notifier)](https://hub.docker.com/r/cdmanning/web-scrape-notifier) [![Docker Pulls](https://img.shields.io/docker/pulls/cdmanning/web-scrape-notifier)](https://hub.docker.com/r/cdmanning/web-scrape-notifier)
 
 This Web-Scrape-Notifier is a lightweight, configuration based web scraper developed for the purpose of monitoring webpages for inventory restocks or content changes. Originally built to report Raspberry Pi restocks for building out my homelab, I've refactored it to work inside a Docker Container. By customizing the configuration file with a target URL and HTML element, this utility will monitor the target webpage on a defined schedule to dispatch an email or SMS text alerts as soon as a change is detected.
   
