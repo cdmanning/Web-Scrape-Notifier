@@ -30,7 +30,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run tests
-        run: python -m unittest discover -s tests
+        run: python -m unittest discover -s tests -v
 
   push_to_registry:
     name: Build and push Docker image to Docker Hub
