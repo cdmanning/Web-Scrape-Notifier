@@ -42,11 +42,11 @@ docker compose -f compose.yaml up  -d
 ### 📱 Sending Texts via SMS Gateways
 Using the standard SMTP communication protocol this script can easily be configured to send text messages directly to your phone. Most mobile carriers have a SMS-to-Email gateway which can be used to achieve this outcome.
 
-- T-Mobile: phone\_number@tmomail.net
+- T-Mobile: `phone_number@tmomail.net`
 
-- Verizon: phone\_number@vtext.com
+- Verizon: `phone_number@vtext.com`
 
-- AT&T: phone\_number@txt.att.net
+- AT&T: `phone_number@txt.att.net`
 
 
 ### ⏱️ Setting Timers with Cron
