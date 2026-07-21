@@ -1,0 +1,18 @@
+{
+  "targets": [
+    {
+      "name": "Example Online Website",
+      "url": "https://www.example.com/product",
+      "element_tag": "div",
+      "element_class": "inventory-status",
+      "target_text": "Sold Out"
+    },
+    {
+      "name": "Sandbox - ALERT SHOULD TRIGGER",
+      "url": "https://quotes.toscrape.com/",
+      "element_tag": "span",
+      "element_class": "text",
+      "target_text": "Sold Out"
+    }
+  ]
+}

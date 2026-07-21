@@ -1,0 +1,9 @@
+services:
+  scraper:
+    build: .
+    container_name: Web-Scrape-Notifier
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./config.json:/app/config.json:ro
