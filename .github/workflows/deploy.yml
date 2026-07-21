@@ -35,7 +35,9 @@ jobs:
   push_to_registry:
     name: Build and push Docker image to Docker Hub
     needs: test
-    if: github.event_name == 'release' || github.event.inputs.deploy == 'true'
+    if: |
+      github.event_name == 'release' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.deploy == 'true')
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
