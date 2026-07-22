@@ -2,7 +2,7 @@
 # Web-Scrape-Notifier - Makefile
 # =============================================
 
-.PHONY: help test test-docker build up down logs clean
+.PHONY: help test build up down logs clean
 
 # Default target
 help:
